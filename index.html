@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8"> <!-- Omogucava unos đ,č,ć,š -->
+    <title>RG PROJEKAT2</title> <!-- Ovo je naslov sajta -->
+    <link rel="stylesheet" href="style.css">  <!--Povezivanje css-a za htmlom-->
+  </head>
+  <body>
+    <div class="glavni"> <!-- Dodavanje div(kontenjer) bloka i klase za editovanjeu u CSS-u-->
+      <h1>POGADJANJE POJMA </h1> <!-- Dodavanje najveceg naslova H1 pored njega postoje H2-H3-H4 -->
+      <div class="sadrzaj">
+        <input type="text" class="pisanje" maxlength="1"> <!--Ubacivanje inputa sa kojim korisnik moze da unosi u ovom slucaju slova sa tastature-->
+        <div class="unos"></div><!--Povezivanje JavaScripta za htmlom-->
+        <div class="detalji"> <!--Pravljenje klase -->
+          <p class="definicija">Definicija: <span></span></p> <!--Uredjenje teksta i ugradjeni kontenjer-->
+          <p class="preostali_pokusaji">Prostali pokusaji: <span></span></p>
+          <p class="pogresna_rijec">Pogresna slova: <span></span></p>
+        </div>
+        <button class="reset_dugme">Pokreni ponovo</button>  <!--Dodavanje dugmeta-->
+      </div>
+    </div>
+
+    <script src="js/words.js"></script> <!--Povezivanje JavaScripta za htmlom-->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

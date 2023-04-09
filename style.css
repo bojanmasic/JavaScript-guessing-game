@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap');
+*{
+  box-sizing: border-box;
+font-family: 'Volkhov', serif;
+}
+  /* Ubacivanje fonta preko linka */
+   /*Uredjivanje bodya*/
+body{
+  display: flex; /* Fleksibilan sturktura tijela */
+  padding: 0 10px; /* Razmak unutar elementa */
+  min-height: 100vh; /* Minimalna velicina*/
+  align-items: center; /* Poravnjavanje elemanta unutra vertikalno*/
+  justify-content: center;/* Poravnjavanje elemanta unutra horizontalno*/
+  background-image: url("pozadina.jpg"); /*Postavljanje pozadine preko slike*/
+  background-size: 100%;/*Vidljivost pozadine */
+}
+.glavni{   /* Uredjivanje glavnog dijela, gdje je smjesten kviz */
+  width: 1050px;/* Sirina u piksleima*/
+  height: 500px; /*Visina u pikselima */
+  background: #e5ac2b; /*Pozadina podesena u boji */
+  border-radius: 10px;  /*Zaobljenost ivica */
+}
+.glavni h1{ /* Editovanje naslova (Unesi pojam), za glavni dio programa */
+  text-align: center; /* Postavljanje teksta na centar */
+  font-size: 30px; /* Velicina fonta u pikselima*/
+  padding: 20px 25px; /* Razmak naslova prvi broj oznacana razmak od vrha a drugi razmak dna */
+  border-bottom: 2.5px solid black; /* Linija koja je postavljena ispod teksta  2.5 oznacava velicinu linije solid popunjenost i black boju same linije*/
+}
+.glavni .sadrzaj{/*Marigine sadrzaja u glavnom programu*/
+  margin: 25px 25px 35px;
+}
+.sadrzaj .unos{/* Kvadratici za slova */
+  display: flex;
+  justify-content: center;
+}
+.unos input{  /* Uredjivanje kvadratica gdje se prikazuju  tacna slova */
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1BA98C;
+  text-align: center;
+  border-radius: 5px;
+  background: none; 
+  text-transform: uppercase; /*Transformacija slova u velika */
+  border: 1px solid black;
+}
+.pisanje {  /*Uredjivanje unosa slova u aplikaciju*/
+  opacity: 0; /*Providnost*/
+  z-index: -999; /*Redosled slova*/
+  position: absolute; /*absolute znaci fiksiranje elemenata da se ne mogu pomjerati */
+}
+.detalji p{ /*Uredjivanje detalja u glavnom dijelu*/
+  padding-top: 20px;
+  font-size: 19px; /* Velicina fonta*/
+}
+.sadrzaj .reset_dugme{  /*Uredjivanje "Pokreni ponovo " dugmera*/
+  width: 50%; /* Sirina postavljena u postotcima */
+  display: flex;
+  margin-top: 40px; /*Postavljanje razmaka sa vrha van dugmeta */
+  margin-right: auto; /*Postavljanje razmaka sa desne strane van dugmeta */
+  margin-left: auto;/*Postavljanje razmaka sa lijeve strane van dugmera */
+  justify-content: center;
+  border-width: 1.5px; /*Postavljane velicine granice*/
+  border-color: #006400; /*Postavljane boja granice*/
+  cursor: pointer;
+  color: #FFF; /*Postavljanje boje slova  */
+  padding: 15px ;
+  font-size: 17px; 
+  border-radius: 5px; 
+  background: #008B45;
+  transition: all 0.5s ease; /*Postavljanje animacije kad se prodje kursorom preko dugmeta */
+}
+
+.sadrzaj .reset_dugme:hover{/*Pokreni ponovo dugme prelazak kursora preko njega*/
+  background: #548B54; /*Postavljanje boje animacije kad se prodje kursorom preko dugmeta */
+}
+
+
